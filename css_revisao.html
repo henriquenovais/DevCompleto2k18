@@ -2,7 +2,18 @@
 <html lang="pt-BR">
     <head>
         <title>Metal \m/</title>
-        <meta charset="UTF-8">
+        <!-- Metadados são dados sobre outros dados -->
+        <meta charset="UTF-8"> 
+        <!-- Meta dados que dizem respeito ao tipo que caracteres que serão empregados  -->
+        <meta name="author" content="Henrique Oliveira"> <!-- Nome do autor -->
+        <meta name="generator" content="Brackets"> <!-- Nome do software que criou esse arquivo -->
+        <meta name="keywords" content="HTML5, CSS, Troxa em treinamento">
+        <meta name="application-name" content="Gruvadeira Desgramada">
+        <meta name="description" content="Um sitezinho de boas que eu estou fazendo tranquilamente">
+        <meta http-equiv="refresh" content="2"> <!-- Vai dar refresh automático de 3 em 3 segundos -->
+        
+        
+        
         <style>
             body {
                 background: #990000;
@@ -11,9 +22,72 @@
                 
             }
         </style>
+        <script>
+            
+            //aplicação utilizando javascript externo
+            function inicial(){ //definição de função
+                nome.innerHTML = "Teste pra escrever coisas em HTML dentro "; //chama o objeto de id nome para ser carregado e coloca dentro desse objetvo dados utilizando a função o método innerHTML
+            }
+            function sorteioCompleto(){
+                sorteio.innerHTML = Math.round(Math.random() * 50);
+            }
+            
+            //window.onload = inicial;
+            //para chamar a função inicial quando o carregamento da página tiver sido completado
+            window.onload = sorteioCompleto;
+            
+
+            
+            
+        </script>
     </head>
     
     <body>
-        <center><h1>Esse site será metaleiro</h1></center>
+        <hgroup><h1>Essa página será metaleira!</h1>
+        <h2>\m/</h2></hgroup> <!-- Hgroup previne que sejam criados espaços entre dois headers diferentes, criando de maneira eficaz um título e um subtítulo-->
+        <br><br>
+        <center><h1>Brincadeira, na real essa pagina não vai ser porra nenhuma de metaleira ,vai ter sorteio. Que coisa louca</h1></center>
+        <br><br>
+
+        <br>
+        <p id="sorteio"></p>
+        <br><br>
+        <center><p>É possível <br> Utilizar o pular de linha <br> Dentro da tag <br> de parágrafo</p></center>
+        <br>
+        <center><p>Texto em <b>destaque</b> <br> 
+            Texto em <i>itálico</i>, especialmente util para termos técnicos, traduções e palavras em outra língua<br>
+            Texto <u>sublinhado</u><br>
+            Texto <sub>subscrito</sub><br>
+            Texto <sup>superescrito</sup><br>
+            Texto <s>riscado</s><br>
+            Texto <em>enfatizado</em>, especial para ser utilizado em palavras de pronuncia diferente<br>
+            Texto <strong>mais destacado ainda</strong><br>
+            Sem esquecer que sempre é possível especificar a lingua na qual o texto está escrito <i lang="en"> for example this sentence is in english!</i> e essa é uma observação que não faz diferença imediata para o usuário mas é fundamental para que a máquina compreenda que são caracteres escritos em duas linguas diferentes.</p></center>
+        <br><br>
+        
+        Listas:<br>
+        Lista nao organizada
+        <ul type="circle">
+            <li>item 1</li>
+            <li>item 2 </li>
+            <li>item3</li>
+        </ul>
+        <br>
+        lista organizada
+        <br>
+        <ol type="I">
+            <li>item 1</li>
+            <li>item 2 </li>
+            <li>item3</li>
+        </ol>
+        Lista descritiva: <br>
+        <dl>
+            <dt>Gruva desgrama</dt>
+            <dd>Gruvadeira desgramada descritiva</dd>
+        </dl>
+        <br><br>
+        
+        
+        
     </body>
 </html>
