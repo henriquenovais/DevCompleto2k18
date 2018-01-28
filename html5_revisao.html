@@ -21,6 +21,30 @@
                 color: #00FFFF;
                 
             }
+            /* ao declarar uma classe é necessário ficar atento ao fato de que caso seja uma alteração realizada numa tag basta colocar a tag. Por exemplo:
+            h1 {
+             *detalhes da classe aqui*
+            }
+            para declarar uma classe que não seja uma tag é necessario incluir um ponto(.), por exemplo:
+            .h1 {
+             *detalhes da classe aqui*
+            }
+            */
+            .img-ajuste{
+                text-align: left;
+                float: right;
+                clear: right;
+                border: 10px solid #000;
+                height: 60%;
+                width: 60%;
+                margin-bottom: 50px;
+            }
+            figure{
+
+                float:right;
+                border: 10px solid #000;
+                margin-bottom: 50px;
+            }
         </style>
         <script>
             
@@ -98,13 +122,30 @@
             <dt>Gruva desgrama</dt>
             <dd>Gruvadeira desgramada descritiva</dd>
         </dl>
+        </center>
         <br><br>
         <img src="imagens/massacration.jpg" alt="Imagem da banda Massacration" 
-             title="Massacration, A melhor banda de Heavy Metal do Universo" width="800px" height="400px" style="float:right;margin-bottom: 100px;">
+             title="Massacration, A melhor banda de Heavy Metal do Universo" width="800px" height="400px" style="float:right;margin-bottom: 100px;border: 10px solid #000;" >
+            <!-- Esse tipo de approach ao código é chamado de estilo inline, a declaração dos gráficos do site é feito diretamente na linha de declaração da imagem -->
             
             <p>Esse é um texto que visa textar as possibilidades de alinhamento de uma imagem em um site. Assim, eu vou poder testar exatamente quais são as minhas possibilidades como programador de Front End no quesito de ajuste de legendas, textos e títulos alternativos.</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!-- Agora realizaremos o método de classe com <style></style> para fazer os ajustes na mesma imagem -->
+            <img src="imagens/massacration.jpg" class="img-ajuste">
+            <p>Esse é um texto que visa textar as possibilidades de alinhamento de uma imagem em um site. Assim, eu vou poder testar exatamente quais são as minhas possibilidades como programador de Front End no quesito de ajuste de legendas, textos e títulos alternativos.</p>
+            <!-- As tags <figure> e <figcaption> são tags fundamentais com imagens, pois são através dessas que são colocadas as informações fundamentais das tags-->
+            <figure>
+                <img src="imagens/massacration2.jpg">
+                
+                <figcaption>
+                    Foto da internet. (Foto: Autor desconhecido)
+                </figcaption>
+            
+            </figure>
+            
+            
         
         
-        </center>
+
     </body>
 </html>
