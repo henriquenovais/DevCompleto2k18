@@ -3,10 +3,133 @@
 	<head>
 		<title> Revisão parte 2 </title>
 		<meta charset="UTF-8">
-		
+		<meta name="author" content="Henrique Oliveira">
+
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 12 px;
+			}
+			li {
+				/* list-style-type: upper-roman; para mudar os marcadores das listas para um tipo diferente dos disponíveis em HTML*/
+				/* list-style-image: url(imagens/lista.png);  usar uma imagem para a lista */ 
+
+			}
+			#menu {
+				margin: 0;
+				padding: 10px 0px;
+				width: 60%;
+			}
+			#menu li a{
+				text-decoration: none;
+				font-weight: bold; /* todas as fontes ficarão em negrito*/
+				margin-bottom: 2px; /* margem inferior */
+				padding: 10px 4px ; /* propriedade de gerar espaço entre elementos. padding: espaço_cimapx espaço_ladopx*/
+				background-color: #FFA500;
+				color: #000000;
+
+
+			}
+			#menu li{ 
+				list-style: none;
+				display: inline-block; 
+
+
+			}
+			#menu li a:hover{
+				background-color: #FF0000;
+
+			}
+			aside {
+				float: center;
+				width: 230px;
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #999;
+				margin-right: 20px;
+				margin-bottom: 20px;
+				padding: 40px 10px;
+				background: url(imagens/aspas.gif) no-repeat;
+				color: #999;
+			}
+
+			footer{
+				border-top: 1px solid #000;
+			}
+		</style>
 	</head>
 
 	<body>
+		<center>
+			<h1>Revisão HTML 2</h1>
+
+			<header> <!-- header é o elemento de cabeçalho comumente utilizado como topo de uma determinada parte de um side, pode ser repetido várias vezes uma vez que cada parte de um site exige um topo -->
+				<img src="imagens/massacration.jpg">
+			</header>
+
+			<main>	<!-- A tag <div></div> cria divisões entre diferentes setores e a <main></main> seria uma tag especial de divs com o objetivo de sinalizar qual a div principal-->
+				<nav> <!-- Nav é um div que tem como objetivo sinalizar a parte de navegação do site-->
+					<ul id="menu">
+						<li><a href="html5_revisao2">	Home		</a></li>
+						<li><a href="html5_revisao2">	Info		</a></li>
+						<li><a href="html5_revisao2">	Special Events	</a></li>
+						<li><a href="html5_revisao2">	DVD	</a></li>
+						<li><a href="html5_revisao2">	Location	</a></li>
+					</ul>
+
+				</nav>
+
+				<div>
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+					</ul>
+				</div>
+
+				<article>
+
+				<p>Quando o pato mia quer dizer que o gato late.</p>
+				<!-- caso a página possua uma divisória com um artigo é interessante utilizar <article></article>-->
+				</article>
+				
+				<!-- www.w3.org -->
+				<div>
+					<ol type="I">
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+					</ol>
+				</div>
+
+				<div>
+					<ol type="I">
+						<li>Brasil</li>
+						<ul>
+							<aside >
+								<p>Nossa, essa é a melhor banda de metal que eu já vi na minha vida!</p>
+							</aside>
+							<li>São Paulo</li>
+							<li>Brasília</li>
+							<li>Salvador</li>
+						</ul>	
+						<li>Japão</li>
+						<li>China</li>
+					</ol>
+				</div>
+				<section>
+					<!-- tag utilizada para "capítulos" do site, pequenas partes-->
+				</section>
+			</main>
+
+			<footer>
+				<p>O site acaba aqui</p>
+			</footer>
+
+		</center>
 	</body>
 
 
