@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!-- Determina explicitamente o tipo do arquivo que está sendo utilizado -->
 <html lang="pt-BR">
     <head>
-        <title>Metal \m/</title>
+        <title>Revisão parte 1</title>
         <!-- Metadados são dados sobre outros dados -->
         <meta charset="UTF-8"> 
         <!-- Meta dados que dizem respeito ao tipo que caracteres que serão empregados  -->
@@ -30,6 +30,7 @@
              *detalhes da classe aqui*
             }
             */
+            
             .img-ajuste{
                 text-align: left;
                 float: right;
@@ -39,7 +40,7 @@
                 width: 60%;
                 margin-bottom: 50px;
             }
-            figure{
+             figure{
 
                 float:right;
                 border: 10px solid #000;
@@ -76,7 +77,7 @@
             Style element
             -->
         <fieldset>
-            <center><h1>Revisão HTML</h1></center>
+            <center><h1 id="topo">Revisão HTML</h1></center>
         </fieldset>
         <hgroup><h1>Essa página será metaleira!</h1>
         <h2>\m/</h2></hgroup> <!-- Hgroup previne que sejam criados espaços entre dois headers diferentes, criando de maneira eficaz um título e um subtítulo-->
@@ -134,8 +135,9 @@
             <img src="imagens/massacration.jpg" class="img-ajuste">
             <p>Esse é um texto que visa textar as possibilidades de alinhamento de uma imagem em um site. Assim, eu vou poder testar exatamente quais são as minhas possibilidades como programador de Front End no quesito de ajuste de legendas, textos e títulos alternativos.</p>
             <!-- As tags <figure> e <figcaption> são tags fundamentais com imagens, pois são através dessas que são colocadas as informações fundamentais das tags-->
+           	
             <figure>
-                <img src="imagens/massacration2.jpg">
+                <img src="imagens/massacration.jpg">
                 
                 <figcaption>
                     Foto da internet. (Foto: Autor desconhecido)
@@ -143,7 +145,15 @@
             
             </figure>
             
+            <a href="https://www.google.com" target = "_blank"> Link normal para o Google </a> 
+            <br><br>
+            <!-- target="_blank" é para abrir em uma nova aba ou nova janela-->
+            <!-- href também pode ser utilizado para gerar links para arquivos que estejam no mesmo disco que o arquivo que está sendo aberto-->
+            <!-- Por exemplo, html5_revisao.html está em DevCompleto2k18. Se eu quiser acessar a pasta pai de DevCompleto2k18 basta fazer  href="../arquivo.html" . "../" sobe um nível da hierarquia das pastas. -->
+            <a href="#topo"> Link para o topo da página </a> <!-- Topo é um id-->
+
             
+            <a href="html5_revisao2.html" target="_blank" > <img src="imagens/massacration.jpg"><figcaption> </figcaption> </a>
         
         
 
