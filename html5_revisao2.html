@@ -77,16 +77,36 @@
 			}
 
 			table tbody tr:nth-child(odd){ /* tem que estar coladoooo!!!!!!!!!!!!!!!!!!  */
+				/* colorir linhas impares */
 				background-color: beige;
 			}
 
-			table tbody tr:nth-child(even){ /* tem que estar coladoooo!!!!!!!!!!!!!!!!!!  */
+			/* table tbody tr:nth-child(even){ /* tem que estar coladoooo!!!!!!!!!!!!!!!!!!  
+				/* Colorir linhas pares 
 				background-color: lime;
+			}
+
+			*/
+
+			/* Porque utilizar ponto?? */
+
+			.coluna1{
+				background-color: aqua;
+			}
+
+			.coluna2{
+				background-color: orange;
+			}
+
+			.coluna3{
+				background-color: purple;
 			}
 
 
 		</style>
+
 	</head>
+
 
 	<body>
 		<center>
@@ -195,6 +215,13 @@
 		            	<caption>
 		            		Vendas de sapato mensais por marca
 		            	</caption>
+
+		            	<colgroup>
+		            		<!-- tag utilizada para fazer referência as colunas da tabela-->
+		            		<col class="coluna1">
+		            		<col class="coluna2">
+		            		<col class="coluna3">
+		            	</colgroup>
 
 		            	<thead>
 		            		<tr>
