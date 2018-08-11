@@ -13,9 +13,8 @@
 			h5, h4 {
 				text-align: center;
 			}
-			#resposta{
 
-			}
+
 		</style>
 	</head>
 
@@ -54,8 +53,8 @@
 			<label for="op13" id="resposta">Reddit</label>
 			<input type="checkbox" name="op13" id="questionario" value="reddit" required>
 			<br>
-			<label for="op14" id="resposta">Amigos e colegas</label>
-			<input type="checkbox" name="op14" id="questionario" value="amigo" required>
+			<label for="op14" id="resposta"> Amigos e Colegas </label>
+			<input type="checkbox" name="op14" id="questionario" value="amigo" required> 
 			<br>
 			<label for="comentario" id="resposta">Outros:</label>
 			<input type="text" id="comentario" name="comentario" size="50" maxlengh="100" required>
@@ -74,6 +73,22 @@
 			<input type="date" name="idaniversario" id="idaniversario" size="30">
 	
 			<!-- Tipos de input: color, date, datetime, datetime-local , email, month, number, range, search, tel , time , url, week-->
+
+			<br><br>
+
+			<label class="labelClass" for="emote"> Escolha o seu emote favorito do Twitch Chat:</label>
+			<input type="text" name="emote" id="emote" list="list_emote" size="30">
+
+			<datalist id="list_emote">
+
+				<option value="KappaPride">KappaPride</option>
+				<option value="MonkaS">MonkaS</option>
+				<option value="WeebS">WeebS</option>
+				<option value="Keppo">Keppo</option>
+				<option value="REEEEEEEEEEEEEE">REEEEEEEEEEEEEE</option>
+
+			</datalist>
+
 
 
 		</form>
