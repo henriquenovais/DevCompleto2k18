@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+		<title> Revisão parte 2 </title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Henrique Oliveira">
+
+		<style>
+			body {
+				font-family: sans-serif;
+				font-size: 12 px;
+			}
+			li {
+				/* list-style-type: upper-roman; para mudar os marcadores das listas para um tipo diferente dos disponíveis em HTML*/
+				/* list-style-image: url(imagens/lista.png);  usar uma imagem para a lista */ 
+
+			}
+			#menu {
+				margin: 0;
+				padding: 10px 0px;
+				width: 60%;
+			}
+			#menu li a{
+				text-decoration: none;
+				font-weight: bold; /* todas as fontes ficarão em negrito*/
+				margin-bottom: 2px; /* margem inferior */
+				padding: 10px 4px ; /* propriedade de gerar espaço entre elementos. padding: espaço_cimapx espaço_ladopx*/
+				background-color: #FFA500;
+				color: #000000;
+
+
+			}
+			#menu li{ 
+				list-style: none;
+				display: inline-block; 
+
+
+			}
+			#menu li a:hover{
+				background-color: #FF0000;
+
+			}
+			aside {
+				float: center;
+				width: 230px;
+				border-top: 1px solid #999;
+				border-bottom: 1px solid #999;
+				margin-right: 20px;
+				margin-bottom: 20px;
+				padding: 40px 10px;
+				background: url(imagens/aspas.gif) no-repeat;
+				color: #999;
+			}
+
+			footer{
+				border-top: 1px solid #000;
+			}
+
+			table{
+				width: 200px;
+				border: 1px solid #000;
+				padding: 5px;
+				margin-bottom: 10px;
+				margin-top: 20px;
+			}
+
+			table tr td{
+				border-style: solid;
+				border-width: 1px;
+				padding: 5px;
+				text-align: center;
+			}
+			table tr th{
+				border-style: dotted;
+				border-width: 2px;
+				text-align: center;
+			}
+
+			table tbody tr:nth-child(odd){ /* tem que estar coladoooo!!!!!!!!!!!!!!!!!!  */
+				/* colorir linhas impares */
+				background-color: beige;
+			}
+
+			/* table tbody tr:nth-child(even){ /* tem que estar coladoooo!!!!!!!!!!!!!!!!!!  
+				/* Colorir linhas pares 
+				background-color: lime;
+			}
+
+			*/
+
+			/* Porque utilizar ponto?? */
+
+			.coluna1{
+				background-color: aqua;
+			}
+
+			.coluna2{
+				background-color: orange;
+			}
+
+			.coluna3{
+				background-color: purple;
+			}
+
+
+		</style>
+
+	</head>
+
+
+	<body>
+		<center>
+			<!-- Para saber mais sobre as mudanças no HTML5, visite: 
+				https://wiki.whatwg.org/wiki/presentational_elements_and_attributes
+			-->
+			<h1>Revisão HTML 2</h1>
+
+			<header> <!-- header é o elemento de cabeçalho comumente utilizado como topo de uma determinada parte de um side, pode ser repetido várias vezes uma vez que cada parte de um site exige um topo -->
+				<img src="imagens/massacration.jpg">
+			</header>
+
+			<main>	<!-- A tag <div></div> cria divisões entre diferentes setores e a <main></main> seria uma tag especial de divs com o objetivo de sinalizar qual a div principal-->
+				<nav> <!-- Nav é um div que tem como objetivo sinalizar a parte de navegação do site-->
+					<ul id="menu">
+						<li><a href="html5_revisao2">	Home		</a></li>
+						<li><a href="html5_revisao2">	Info		</a></li>
+						<li><a href="html5_revisao2">	Special Events	</a></li>
+						<li><a href="html5_revisao2">	DVD	</a></li>
+						<li><a href="html5_revisao2">	Location	</a></li>
+					</ul>
+
+				</nav>
+
+				<div>
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+					</ul>
+				</div>
+
+				<article>
+
+					<p>O comunismo contemporâneo pretende preservar e superar todo progresso tecnológico conquistado através do capitalismo, mediante um sistema de planejamento geral, no qual as múltiplas decisões, tomadas de acordo com o mecanismo de mercado no capitalismo, sejam adotadas de forma deliberada segundo critérios que permitam maximizar a satisfação das necessidades de toda a sociedade. Segundo a doutrina comunista, o mecanismo de mercado apresenta graves defeitos como regulador da produção e da distribuição, pois impede a plena utilização de todos os recursos disponíveis e promove desigualdade entre os que têm e os que não têm acesso à propriedade.</p>
+
+					<p>As tentativas de aplicar o planejamento geral esbarraram com dificuldades que, em parte, eram esperadas e que se acentuaram na medida em que a melhoria do nível de bem-estar permitiu a elevação e a diversificação das aspirações. Quando tais dificuldades foram sendo reconhecidas, novas modalidades de planejamento foram desenvolvidas. Essas novas modalidades procuravam combinar, de diferentes maneiras, o planejamento com mecanismos de mercado.</p>
+
+					<p>A procura de critérios objetivos de avaliação de eficiência e de incentivos ao aumento da produtividade tem levado a uma significativa diferenciação entre os chamados "regimes comunistas". <mark>Enquanto alguns,<!-- Não é uma tag elegante e nem uma tag muito utilizada mas é sempre bom saber que existe. Faz um highligh no texto.--></mark>como o da Iugoslávia, recorreram aos mecanismos de mercado, restringindo a área do planejamento e recorrendo crescentemente a incentivos materiais, outros, como o da China, restringem a ação dos mecanismos de mercado e dão ênfase cada vez maior aos incentivos psicológicos e à criação de padrões de conduta segundo uma ética revolucionária. </p>
+				<!-- caso a página possua uma divisória com um artigo é interessante utilizar <article></article>-->
+				</article>
+				
+				<!-- www.w3.org -->
+				<div>
+					<ol type="I">
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+						<li>Item 4</li>
+						<li>Item 5</li>
+					</ol>
+				</div>
+
+				<div>
+					<ol type="I">
+						<li>Brasil</li>
+						<ul>
+							<aside >
+								<p>Nossa, essa é a melhor banda de metal que eu já vi na minha vida!</p>
+							</aside>
+							<li>São Paulo</li>
+							<li>Brasília</li>
+							<li>Salvador</li>
+						</ul>	
+						<li>Japão</li>
+						<li>China</li>
+					</ol>
+				</div>
+				<section>
+					<!-- tag utilizada para "capítulos" do site, pequenas partes-->
+				</section>
+
+				<div>
+
+	            	<table>
+	            		<!-- tag para a criação de tabelas-->
+	            		<!-- TABELAS NÃO DEVEM SER UTILIZADAS COMO GUIAS DE LAYOUT PARA UM SITE, via de regra-->
+	            		<!-- CARACTERIZAÇÃO DA TABELA NAÕ DEVE SER FEITA EM HTML!!!!!Deixe o front end para ser feito apenas em CSS Exemplo:<table border="1" width=100px ></table>-->
+	            		<tr>
+	            			<th>Campeão</th>
+	            			<th>Winrate</th>
+	            		</tr>
+	            		<tr>
+	            			<td>Nidalee</td>
+	            			<td>72%</td>
+	            		</tr>
+	            		<tr>
+	            			<td>Urgot</td>
+	            			<td>44%</td>
+	            		</tr>
+	            		<tr>
+	            			<td>Warwick</td>
+	            			<td>99%</td>
+	            		</tr>
+	            	</table>
+
+	            </div>
+
+	            <br><br>
+
+	            <div>
+	            	<table>
+	            	<!-- Montagem de tabela semântica**(?)-->
+		            	<caption>
+		            		Vendas de sapato mensais por marca
+		            	</caption>
+
+		            	<colgroup>
+		            		<!-- tag utilizada para fazer referência as colunas da tabela-->
+		            		<col class="coluna1">
+		            		<col class="coluna2">
+		            		<col class="coluna3">
+		            	</colgroup>
+
+		            	<thead>
+		            		<tr>
+			            		<td></td>
+			            		<th>Democrata</th>
+			            		<th>Havaianas</th>
+			            		<th>Dupé</th>
+			            		<th>Polo Ralph Lauren</th>
+			            	</tr>
+		            	</thead>
+
+		            	<tfoot>
+		            		<tr>
+			            		<th>Total:</th>
+			            		<td>400</td>
+			            		<td>500</td>
+			            		<td>600</td>
+			            		<td>900</td>
+		            		</tr>
+		            	</tfoot>
+
+		            	<tbody>
+			            	<tr>
+			            		<td></td>
+			            		<td>100</td>
+			            		<td>125</td>
+			            		<td>150</td>
+			            		<td>225</td>
+		            		</tr>
+
+		          			<tr>
+		          				<td></td>
+			            		<td>100</td>
+			            		<td>125</td>
+			            		<td>150</td>
+			            		<td>225</td>
+		            		</tr>
+
+		            		<tr>
+		            			<td></td>
+			            		<td>100</td>
+			            		<td>125</td>
+			            		<td>150</td>
+			            		<td>225</td>
+		            		</tr>
+
+		            		<tr>
+		            			<td></td>
+			            		<td>100</td>
+			            		<td>125</td>
+			            		<td>150</td>
+			            		<td>225</td>
+		            		</tr>
+
+		            	</tbody>
+
+	            	</table>
+	            </div>
+
+			</main>
+            
+
+
+
+
+			<footer>
+                <!-- Footer é a tag utililizada para detalhes que ficam no fim do site-->
+				<p>O site acaba aqui</p>
+				<small> <!-- A tag small é utilizada para representar detalhes jurídicos como direitos reservados-->
+				&copy Copyright 2018 - Henrique Oliveira todos os direitos reservados. 
+				<!-- Para ivocar caracteres especiais basta usar &-->
+				</small>
+				<address>
+					<!-- tag utilizada não apenas para endereços, quaisquer informações de contato devem estar contidas nessa.-->
+					Aqui ficam informações de contato: <a href="email@provedor.com">email@provedor.com</a> e <a href="tel:+5571999999999">+55(71)9.9999-9999</a>. 
+				</address>
+			</footer>
+
+		</center>
+	</body>
+
+
+</html>
