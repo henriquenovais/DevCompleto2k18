@@ -21,6 +21,84 @@
 
 		<!-- The last way to use CSS is through inline CSS. Basically, the CSS will be restricted to one tag in the HTML file. A good example would be:
 		 <h1 style="color:red"> Page tittle </h1>-->
+
+		 <!--  http://www.w3.org/Style/CSS/current-work-en.html-->
+		 <!-- http://www.w3.org/TR/CSS2 -->
+
+		 <!-- 
+		 This is a CSS bracket connected to a class: 
+			
+		 .classname{
+	
+		 } 
+
+
+		 -->
+
+		 <!-- This is a CSS bracket connected to multiple html tags(in this case the tags ul, li and a will have its letters in a different color):
+		 ul, li, a{
+			color: lime;
+		 } 
+		 -->
+
+		 <!-- This is a CSS bracket connected to an HTML tag through ID:
+		 #idname {
+	
+		 } 
+		 -->
+
+		 <!-- The main difference between the usage of ID and CLASS specs is that id is unique while class can be applied to a group of tags -->
+
+		 <!-- This CSS bracket is only applied to a certain combination of tags(<div><p>Only this kinda of text will have its color changed to lime</p></div>):
+		 	div p{
+				color: lime;
+		 	}
+		 -->
+
+		 <!-- This CSS bracket has a very special use, the first type of tag will serve as a reference to the properties of the bracket since only the first element right after it will get the specified changes(only the first <a></a> tag after a <h1></h1> tag will have its letters changed):
+
+		 	h1+a{
+		 		color: lime;
+		 	}
+
+		 -->
+
+		 <!--
+		 	These two tags are perfectly possible:
+			
+			<label for="presshere">This button has two classes and an id: </label>
+		 	<input id="presshere" class="red button" type="submit" value="Enter">  
+		 -->
+
+		 <!--
+		 A possible styling bracket would be:
+
+		 #highlight div p a {
+			color: orange;
+		 } 
+
+		 In this case the web browser will first locate in the code the many <a></a> tags of your documents to then locate which one of these tags are <p><a></a></p> tags. After that, the web browser will locate which one of these <p><a></a></p> tags are 
+		 <div><p><a></a></p></div>. At last, the browser shall look for the name of the id in the universe of <div><p><a></a></p></div> tags(it'll look for a <div><p><a id="highligh"></a></p></div>).
+		 -->
+
+		 <!-- It is not strange to find multiple types of CSS linked in a same HTML file. The order in which a browser reads these multiple types of CSS linking is:
+
+		 1) external CSS  [<link href="style.css" rel="stylesheet" > ]
+
+		 2) internal CSS  
+		 [		<style>
+			h1 {
+				font-size: 200%
+	
+			}
+		</style> --]
+
+		 3) internal and HTML incorporated CSS [ <h1 style="color:red"> Page tittle </h1> ]
+
+
+		 One more reason to always avoid internal incorporated CSS.
+		 -->
+
 	<style type="text/css">
 		
 	</style>
