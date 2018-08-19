@@ -112,24 +112,94 @@
 			 <!-- Declaring font file in designated web host:-->
 
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,700i" rel="stylesheet"> 
 			<!-- It is very important to be careful when it comes to the amount of customization in a font, there are many options but these require more loading time for the webpage (weight and style specifications may vary from font to front, so there are many ways to use a same font-family)-->
 	<style type="text/css">
+		/*
+		If the entire web page has the same design identity it is possible to do:;
+
+		body{
+			font-family: 'Indie Flower', cursive;;
+		}
+
+		This will guarantee a cleaner code since there won't be spam of the font-family section. If you do as explained, it would be best not to specify the font size on this part[PROFESSOR ADVICE! WHY?].
+		*/
+
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-size: 100px; /* pixels(px) is an absolute unit of size.*/
+			font-style: italic; 
+			font-weight: bold;
+		}
 
 		p{
 
 		/*The correct way to "call" the font is specified in the font site*/
 			font-family: 'Indie Flower', cursive;
+			font-size: 200%; /* 200% is a relative font size. Can be written as 2em*/
+			text-align: justify; /* Alligning of the paragraph's text. Can be center, left, right or justify. */
 
 		}
 
+		#properties1{
+			/*  */
+			font-family: 'Indie Flower', cursive;
+			text-indent: 2em;
+			line-height: 2.3em;
+		}
+
+		#properties2{
+			font-family: 'Indie Flower', cursive;	
+			text-align: center;
+			text-decoration: line-through; /* underline, overline, blink or none are possible as well*/
+		}
+
+		#properties3{
+			font-family: 'Indie Flower', cursive;	
+			text-align: left;
+			text-decoration: overline; 
+		}
+
+		#properties4{
+			text-transform: capitalize;
+		}
+
+		#properties5{
+			text-transform: uppercase;
+		}
+
+		#properties6{
+			text-transform: lowercase;
+		}
 	</style>
 </head>
 
 	<body>
 		<!-- www.csszengarden.com is a website created in order to inspire web designers with very different types of webpages with the very same text-->
+
 		<h1>Now we shall learn CSS</h1>
-		<br><br>
+
 		<p>This is a test BOYZ</p>
+
+		<p> Ludwig von Mises was born to Jewish parents in the city of Lemberg, Galicia, Austria-Hungary (now Lviv, Ukraine). The family of his father Arthur Edler von Mises had been elevated to the Austrian nobility in the 19th century (Edler indicates a noble landless family); they had been involved in financing and constructing railroads. Ludwig's mother, Adele (née: Landau), was a niece of Dr. Joachim Landau, a Liberal Party deputy to the Austrian Parliament.[6]:3–9 Arthur von Mises was stationed in Lemberg as a construction engineer with the Czernowitz railway company.
+
+		<p>By the age of twelve, Ludwig spoke fluent German, Polish and French, read Latin, and could understand Ukrainian.[7] Mises had a younger brother, Richard von Mises, who became a mathematician and a member of the Vienna Circle, and a probability theorist.[8] When Ludwig and Richard were still children, their family moved back to Vienna.[citation needed]</p>
+
+		<p>In 1900, Ludwig Von Mises attended the University of Vienna,[9] becoming influenced by the works of Carl Menger. Mises' father died in 1903. Three years later, Mises was awarded his doctorate from the school of law in 1906.[10]</p>
+
+		<p id="properties1">In the years from 1904 to 1914, Mises attended lectures given by Austrian economist Eugen von Böhm-Bawerk.[11] He graduated in February 1906 (Juris Doctor) and started a career as a civil servant in Austria's financial administration. </p>
+
+		<p id="properties2">After a few months, he left to take a trainee position in a Vienna law firm. During that time, Mises began lecturing on economics, and in early 1909, he joined the Vienna Chamber of Commerce and Industry. During World War I, Mises served as a front officer in the Austro-Hungarian artillery and as an economic adviser to the War Department. </p>
+
+		<p id="properties3">Mises was chief economist for the Austrian Chamber of Commerce and was an economic adviser of Engelbert Dollfuss, the austrofascist but strongly anti-Nazi Austrian Chancellor.[12] Later he was economic adviser to Otto von Habsburg, the Christian democratic politician and claimant to the throne of Austria (which had been legally abolished in 1918 following the Great War).[13] In 1934, Mises left Austria for Geneva, Switzerland, where he was a professor at the Graduate Institute of International Studies until 1940. </p>
+
+		<br><br>
+
+		<h1 id="properties4">get capitalized shit done</h1>
+		<h1 id="properties5">get uppercase shit done</h1>
+		<h1 id="properties6">GET LOWERCASE SHIT DONE</h1>
+
+
 	</body>
 
 </html>
