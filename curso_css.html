@@ -134,6 +134,7 @@
 			font-size: 100px; /* pixels(px) is an absolute unit of size.*/
 			font-style: italic; 
 			font-weight: bold;
+			text-shadow: 5px 5px 2px #CFF;
 		}
 
 		p{
@@ -226,7 +227,7 @@
 			background-image: url('imagens/background.jpg'); /* this command will automatically repeat the background image! */
 			background-repeat: repeat;
 			background-attachment: fixed;
-			background-position: top;
+			background-position: top; /* */
 
 
 		}
@@ -234,12 +235,13 @@
 		img {
 			/*  border-style: solid; */
 			/*border-width: 10px; */
-			border-image: url(border1.png) 40 round;
+			border-image: url(imagens/border1.png) 40 round;
 			border-image-width: 80px ;
 			width: 40%;
 			padding: 100px;
 			margin-bottom: 20px;
 			outline: 1px dashed white;
+			box-shadow: 0px 0px 5px 5px #CFF; /* lateral shadow(negative means other side),bottom shadow(negative means the shadow will be on top), blur(how foggy the shadow is), spread(the object's distance from the surface in which the shadow manifests) and the color of the shadow */
 			/*border-color: red; */
 			/* margin: 20px 20px 20px 20px; */ 
 			/* 
