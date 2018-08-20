@@ -141,36 +141,102 @@
 
 		}
 
-		#properties1{
+		#wording_properties1{
 			/*  */
 			font-family: 'Indie Flower', cursive;
 			text-indent: 2em;
 			line-height: 2.3em;
 		}
 
-		#properties2{
+		#wording_properties2{
 			font-family: 'Indie Flower', cursive;	
 			text-align: center;
 			text-decoration: line-through; /* underline, overline, blink or none are possible as well*/
 		}
 
-		#properties3{
+		#wording_properties3{
 			font-family: 'Indie Flower', cursive;	
 			text-align: left;
 			text-decoration: overline; 
 		}
 
-		#properties4{
+		#wording_properties4{
 			text-transform: capitalize;
 		}
 
-		#properties5{
+		#wording_properties5{
 			text-transform: uppercase;
 		}
 
-		#properties6{
+		#wording_properties6{
 			text-transform: lowercase;
 		}
+
+		#wording_properties7{
+			letter-spacing: -0.1em;  /* This characteristic defines the space between letters in the code. It is  recommended for titles and headlines. */
+			word-spacing: 2em; /* This characteristic defines the space between words, not considered very aesthetically pleasing. */
+
+		}
+
+		/* There are three ways to specify the colors in your styling sheets:
+
+			color: red;
+
+			or
+
+			color: #FF0000; 
+
+			or
+				
+			color: #F00;
+
+			or
+
+			color: rgb(255,0,0);
+
+			or 
+
+			color: rgb(100%,50%,0%);
+
+			or 
+
+			color: rgba(255, 128, 0, 0.5);
+
+			or
+
+			color: hsl()
+
+		*/
+		/* It is interesting to note that #FF0000 can be expressed in a hexadecimal shorthand notation as #F00 since there are three repeated letters. In this same context, #FFCC00 = #FC0 in the hexadecimal shorthand notation.*/
+
+		/*
+			
+		These are some of the scales from color notations:	
+
+		   rgb(0~255 , 0~255 , 0~255) 
+		   rgba(0~255 , 0~255 , 0~255, 0~1)
+		   hsl(0~360, 0~100%, 0~100%)
+		   hsla0~360, 0~100%, 0~100%, 0~1) */
+
+		img {
+			/*  border-style: solid; */
+			border-width: 10px;
+			border-image: url(border.png) 50 50 round;
+			/*border-color: red; */
+			margin: 20px 20px 20px 20px; 
+			/* 
+			The programmer can use:
+
+			margin-top: 20px
+			margin-right: 20px;
+			margin-bottom: 20px;
+			margin-left: 20px;
+
+			Same thing for padding and border.
+			*/
+			padding: 20px 20px 20px 20px ; /* The padding is specified as top, right, bottom  and left  -> clockwise*/
+		}
+
 	</style>
 </head>
 
@@ -179,7 +245,11 @@
 
 		<h1>Now we shall learn CSS</h1>
 
-		<p>This is a test BOYZ</p>
+		<h3>Box Model</h3>
+		<img src="imagens/box_model.png">
+		<img src="imagens/border.png">
+
+		<img src="imagens/massacration.jpg" title="Massacration, a melhor banda do universo">
 
 		<p> Ludwig von Mises was born to Jewish parents in the city of Lemberg, Galicia, Austria-Hungary (now Lviv, Ukraine). The family of his father Arthur Edler von Mises had been elevated to the Austrian nobility in the 19th century (Edler indicates a noble landless family); they had been involved in financing and constructing railroads. Ludwig's mother, Adele (née: Landau), was a niece of Dr. Joachim Landau, a Liberal Party deputy to the Austrian Parliament.[6]:3–9 Arthur von Mises was stationed in Lemberg as a construction engineer with the Czernowitz railway company.
 
@@ -187,17 +257,19 @@
 
 		<p>In 1900, Ludwig Von Mises attended the University of Vienna,[9] becoming influenced by the works of Carl Menger. Mises' father died in 1903. Three years later, Mises was awarded his doctorate from the school of law in 1906.[10]</p>
 
-		<p id="properties1">In the years from 1904 to 1914, Mises attended lectures given by Austrian economist Eugen von Böhm-Bawerk.[11] He graduated in February 1906 (Juris Doctor) and started a career as a civil servant in Austria's financial administration. </p>
+		<p id="wording_properties1">In the years from 1904 to 1914, Mises attended lectures given by Austrian economist Eugen von Böhm-Bawerk.[11] He graduated in February 1906 (Juris Doctor) and started a career as a civil servant in Austria's financial administration. </p>
 
-		<p id="properties2">After a few months, he left to take a trainee position in a Vienna law firm. During that time, Mises began lecturing on economics, and in early 1909, he joined the Vienna Chamber of Commerce and Industry. During World War I, Mises served as a front officer in the Austro-Hungarian artillery and as an economic adviser to the War Department. </p>
+		<p id="wording_properties2">After a few months, he left to take a trainee position in a Vienna law firm. During that time, Mises began lecturing on economics, and in early 1909, he joined the Vienna Chamber of Commerce and Industry. During World War I, Mises served as a front officer in the Austro-Hungarian artillery and as an economic adviser to the War Department. </p>
 
-		<p id="properties3">Mises was chief economist for the Austrian Chamber of Commerce and was an economic adviser of Engelbert Dollfuss, the austrofascist but strongly anti-Nazi Austrian Chancellor.[12] Later he was economic adviser to Otto von Habsburg, the Christian democratic politician and claimant to the throne of Austria (which had been legally abolished in 1918 following the Great War).[13] In 1934, Mises left Austria for Geneva, Switzerland, where he was a professor at the Graduate Institute of International Studies until 1940. </p>
+		<p id="wording_properties3">Mises was chief economist for the Austrian Chamber of Commerce and was an economic adviser of Engelbert Dollfuss, the austrofascist but strongly anti-Nazi Austrian Chancellor.[12] Later he was economic adviser to Otto von Habsburg, the Christian democratic politician and claimant to the throne of Austria (which had been legally abolished in 1918 following the Great War).[13] In 1934, Mises left Austria for Geneva, Switzerland, where he was a professor at the Graduate Institute of International Studies until 1940. </p>
 
 		<br><br>
 
-		<h1 id="properties4">get capitalized shit done</h1>
-		<h1 id="properties5">get uppercase shit done</h1>
-		<h1 id="properties6">GET LOWERCASE SHIT DONE</h1>
+		<h1 id="wording_properties4">get capitalized shit done right</h1>
+		<h1 id="wording_properties5">get uppercase shit done right</h1>
+		<h1 id="wording_properties6">GET LOWERCASE SHIT DONE right</h1>
+
+		<p id="wording_properties7">The term "communism" was first coined and defined in its modern definition by the French philosopher and writer Victor d'Hupay. In his 1777 book Projet de communauté philosophe, d'Hupay pushes the philosophy of the Enlightenment to principles which he lived up to during most of his life in his bastide of Fuveau (Provence). This book can be seen as the cornerstone of communist philosophy as d'Hupay defines this lifestyle as a "commune" and advises to "share all economic and material products between inhabitants of the commune, so that all may benefit from everybody's work".[9]</p>
 
 
 	</body>
