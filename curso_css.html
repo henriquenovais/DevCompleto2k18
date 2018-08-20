@@ -125,6 +125,10 @@
 		This will guarantee a cleaner code since there won't be spam of the font-family section. If you do as explained, it would be best not to specify the font size on this part[PROFESSOR ADVICE! WHY?].
 		*/
 
+		body{
+			color: white;
+		}
+
 		h1 {
 			font-family: 'Raleway', sans-serif;
 			font-size: 100px; /* pixels(px) is an absolute unit of size.*/
@@ -218,12 +222,22 @@
 		   hsl(0~360, 0~100%, 0~100%)
 		   hsla0~360, 0~100%, 0~100%, 0~1) */
 
+		body {
+			background-image: url('imagens/background.jpg');
+
+		}
+
 		img {
 			/*  border-style: solid; */
-			border-width: 10px;
-			border-image: url(border.png) 50 50 round;
+			/*border-width: 10px; */
+			border-image: url(border1.png) 40 round;
+			border-image-width: 80px ;
+			width: 40%;
+			padding: 100px;
+			margin-bottom: 20px;
+			outline: 1px dashed red;
 			/*border-color: red; */
-			margin: 20px 20px 20px 20px; 
+			/* margin: 20px 20px 20px 20px; */ 
 			/* 
 			The programmer can use:
 
@@ -234,7 +248,7 @@
 
 			Same thing for padding and border.
 			*/
-			padding: 20px 20px 20px 20px ; /* The padding is specified as top, right, bottom  and left  -> clockwise*/
+			/* padding: 20px 20px 20px 20px ; /* The padding is specified as top, right, bottom  and left  -> clockwise*/
 		}
 
 	</style>
@@ -246,8 +260,8 @@
 		<h1>Now we shall learn CSS</h1>
 
 		<h3>Box Model</h3>
+
 		<img src="imagens/box_model.png">
-		<img src="imagens/border.png">
 
 		<img src="imagens/massacration.jpg" title="Massacration, a melhor banda do universo">
 
