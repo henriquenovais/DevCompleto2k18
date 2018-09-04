@@ -288,6 +288,45 @@
 
 		}
 
+		.positioning {
+			background-color: cyan;
+			margin: 0% 0%;
+			padding: 0% 0%;
+
+		}
+
+		.box1 , .box2 , .box3 {
+			width: 10em;
+			height: 10em;
+ 			
+ 			
+		}
+
+		.box1 {
+			/* by default an element has a static positioning */
+			/* position: static; */ 
+
+			/* To have an element with relative positioning it means that the web designer is capable of altering the positioning of the element through new css properties. A good example would  be:*/
+
+			/* position: relative;
+			top: 10em;
+			left: 5em; */
+			
+			background-color: green;
+			margin-top: 10px;
+ 			margin-bottom: 20px;
+
+		}
+
+		.box2 {
+			background-color: red;
+
+		}
+
+		.box3 {
+			background-color: yellow;
+
+		}
 	</style>
 </head>
 
@@ -342,6 +381,25 @@
 				</section>
 
 			</article>
+
+			<div class="positioning">
+
+				<p>In this space i shall test the CSS position property</p>
+
+				<section class="box1">
+
+					Box 1
+				</section>
+
+				<section class="box2">
+					Box 2
+				</section>
+
+				<section class="box3">
+					Box 3
+				</section>
+
+			</div>
 
 		</main>
 
