@@ -127,8 +127,8 @@
 
 		h1 {
 			font-family: 'Raleway', sans-serif;
-			font-size: 100px; /* pixels(px) is an absolute unit of size.*/
-			font-style: italic; 
+			font-size: 50px; /* pixels(px) is an absolute unit of size.*/
+			/* font-style: italic; */
 			font-weight: bold;
 			text-shadow: 5px 5px 2px #F00; /* lateral shadow(negative means other side),bottom shadow(negative means the shadow will be on top), blur(how foggy the shadow is) and the color of the shadow */
 			clear: both;
@@ -340,9 +340,52 @@
 		}
 
 		.box3 {
+			position: relative;
+			bottom: 75px;
+			left: 25px;
 			background-color: yellow;
 
 		}
+
+		.clipping_main {
+			margin: 5%;
+			width: 80%;
+			height: 20em;
+			background-color: orange;
+			position: absolute;
+
+		}
+
+		.clipping1 {
+
+			background-color: lime;
+			width: 20em;
+			height: 20em;
+			position: absolute;
+			/* Overflow allows the content of this element to be displayed in an ordered manner through scrolling bars. */
+			overflow: auto;
+
+
+			
+
+		}
+
+		.clipping2 {
+
+			width: 8em;
+			height: 8em;
+			background-color: purple;
+			position: absolute;
+			top: 2em;
+			left: 2em;
+			/* The clip property will enable the CSS user to cut the element accordingly. In this case the cut will be made through the shape of a rectangle, following the specified coordinates.*/
+			clip: rect(0 6em 6em 0);
+
+
+
+
+		}
+
 	</style>
 </head>
 
@@ -400,7 +443,7 @@
 
 			<div class="positioning">
 
-				<p>In this space i shall test the CSS position property</p>
+				<h1>In this space i shall test the CSS position property</h1>
 
 				<section class="box1">
 
@@ -413,6 +456,23 @@
 
 				<section class="box3">
 					Box 3
+				</section>
+
+			</div>
+
+			<h1>Now, i hereby test the clipping technique</h1>
+
+			<div class="clipping_main">
+
+
+				<section class="clipping1">
+
+					<p> Overflow OverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflow OverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflow OverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflow OverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflow OverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflowOverflow</p>
+
+				</section>
+
+				<section class="clipping2">
+					Window2
 				</section>
 
 			</div>
