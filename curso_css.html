@@ -289,6 +289,7 @@
 		}
 
 		.positioning {
+			position: relative;
 			background-color: cyan;
 			margin: 0% 0%;
 			padding: 0% 0%;
@@ -311,15 +312,30 @@
 			/* position: relative;
 			top: 10em;
 			left: 5em; */
+			/* relative positioning is very useful when it comes to moving objects which are inside or outside other objects*/
+
+			/* position: absolute;
+			top: 10em;
+			left: 2em; */
 			
+			/*The absolutely positioned elements will only recognize the properties of an element with relative, fixed or absolute positioning*/
+
 			background-color: green;
-			margin-top: 10px;
- 			margin-bottom: 20px;
+
 
 		}
 
 		.box2 {
+			/* z-index is the CSS property that defines what element will appear first, the bigger the z-index, the closer to the website user the element will be*/
+
 			background-color: red;
+			height: 2em;
+			width: 100%;
+
+			/* fixed positioning allows the designer to create floating designs through the website, it is very common to find among very popular websites hovering menus and theses are implemented through fixed positioning*/
+			position: fixed;
+			z-index: 2;
+			top: 0px;
 
 		}
 
