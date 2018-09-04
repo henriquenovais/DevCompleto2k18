@@ -364,6 +364,9 @@
 			position: absolute;
 			/* Overflow allows the content of this element to be displayed in an ordered manner through scrolling bars. */
 			overflow: auto;
+			/* overflow: hidden will cut the content and will not display any scroll bars*/
+			/* overflow: scroll will display the scrolling bars always, even if the content of the element does not overflow*/
+			/* When the overflow is not especified, the property is in the state overflow: visible*/
 
 
 			
@@ -385,6 +388,9 @@
 
 
 		}
+
+		/* When it comes to defining each size of the website it is very important do a document apart from the code called "grid design". Good software to make such document would be Inkscape and Adobe Fireworks */
+		/* When elaborating the document it is very important to use relative length units such as % and em, that will make the website's grid fluid - which means that when the user shrink the website window the design shall adapt aproprietly if the CSS was used correctly. *\
 
 	</style>
 </head>
