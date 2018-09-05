@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The basics of Javascript</title>
+
+	<style type="text/css">
+
+		body {
+			background: radial-gradient(orange 80%, white);
+			font-style: 'Arial', sans-serif;
+			text-shadow: 5px 5px 2px #FFF;
+			color: purple;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		
+		/*
+
+		Putting javascript in a html file is very simmilar to CSS.
+
+		 The most common and efficient way to do so is through another  javascript file, to do so the tag will be:
+		 <script type="text/javascript" src="arquivo.js"></scrip>
+
+		 The second most common and efficient way is to write:
+
+		 <script type="text/javascript">
+			//javascript code goes here!
+		 <scrip> 
+
+		The third and least efficient way is to do so is through inline javascript. It's very rare and not recommended even though it is practical. 
+
+
+		 */
+
+		 /* 
+
+		 Another fundamental topic is about the adequate positioning of the <script><scrip> tag in the HTML file. There are two optimal positioning places: the first is before the closing body tag(</body>) and the second is before the closing head tag(</head>). 
+
+		 */
+
+		 var size = "44"; // Variable size is a string
+		 var size2 = 44; //Variable size is a number
+
+		 // alert(size); //Outputting the  value of variable size
+		 // alert(size2); //Outputting the  value of variable size2
+
+		 // == is used to do a logical comparison
+
+		 /*
+
+		 if(size==size2){
+		 	alert("Size and size2 have the same value");
+		 }else{
+		 	alert("Size and size2 do not have the same value");
+		 }
+
+		 */
+
+		 // === is used to do a logical comparison and a type comparison.
+		 /*
+		 if(size===size2){
+		 	alert("Size and size2 have the same value and the same type of data");
+		 }else{
+		 	alert("Size and size2 do not have the same value and the same type of data");
+		 }
+		 */
+		 /* 
+
+		 // Basic while loop:
+
+		 var i = 0;
+		 var a = 0;
+		 alert(a);
+
+		 while(i<10){
+
+		 	a += 2;
+		 	i += 1;
+
+		 }
+
+		 alert(a);
+
+		 */
+
+		 /*
+
+		 //Basic do while loop
+
+		 var i = 0;
+		 var a = 0;
+		 alert(a);
+
+		 do{
+
+		 	a += 2;
+		 	i += 1;
+
+		 }while(i<10)
+
+		 alert(a);
+
+		 */
+
+		 /*
+		 var a = 0;
+		 alert(a);
+
+		//Basic for loop
+
+		for(var i=0; i<10;i++){
+			a += 2;
+
+		}
+
+		alert(a);
+
+		*/
+
+		//It is good practice to start the name of a function with a imperative verb.
+		//It is good practice to always use Camel Case.
+
+		function calculateDailyIncome(monthly_income , work_days){
+			var result = monthly_income/work_days;
+			//(variable).toFixed(number) will display  
+			return (result).toFixed(2);
+			// Math.ceil to do an aproximation such as: 67.777777777 = 68
+			// Math.floor and Math.round to do an aproximation such as: 67.77777777 = 67
+
+		}
+		var a;
+		a = calculateDailyIncome(6100, 22);
+		alert(a);
+
+
+		/* In the following example, it is possible to see two variables:
+
+			var global;
+
+			function useGlobalVariable(){
+
+				var local;
+				local = 500;
+				global = 700;
+			}
+
+			alert(global);
+			alert(local);
+
+			When a variable is declared outsite of a function, it is considered by the compiler as a global variable. "alert(global);" in this case will be able to display the value of the global variable as 700 - even without calling the function - because global is a global variable whereas "alert(local);" will display local's value as 0 even though the function useGlobalVariable assigns it the value of 500(that happens because local is a local variable).
+
+			This is a very important distinction for larger pieces of code.
+		*/
+
+
+	</script>
+
+
+</head>
+<body>
+
+	<h1>This is Javascript</h1>
+
+</body>
+</html>
