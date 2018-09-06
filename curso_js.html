@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>The basics of Javascript</title>
+	<meta charset="utf-8">
 
 	<style type="text/css">
 
@@ -131,8 +132,7 @@
 
 		}
 		var a;
-		a = calculateDailyIncome(6100, 22);
-		alert(a);
+		console.log("The daily income is:" + calculateDailyIncome(6100,22));
 
 
 		/* In the following example, it is possible to see two variables:
@@ -153,6 +153,50 @@
 
 			This is a very important distinction for larger pieces of code.
 		*/
+
+		//Arrays
+
+		var array1 = new Array(); //Create an array of undefined length
+		var array2 = [1 ,2 ,3]; //Array of defined length
+
+		console.log("These are arrays:" + array1 + "     " +  array2);
+
+
+		array1.push(325); //Insert element at the end of the array
+		array1.push(400);
+		array1.push(580);
+		array1.push(800);
+		array1.push(1);
+
+		console.log("Array1 has new elements at the end of it: " + array1);
+
+		array1.unshift("new element"); //Insert element at the start of the array
+
+		console.log("Array1 has a new element at the start of it: " + array1);
+
+		console.log("Checking the number of elements in the Array1:" + array1.length);
+
+		array1.pop(); //Delete an element at the end of the array(last element)
+
+		console.log("Now, the array lost one element at the end of it:  "   + array1);
+
+		array1.shift(); //Delete an element at the beggining of the array(first element)
+
+		console.log("Now, the array lost one element at the start of it:  " + array1);
+
+		var search = array1.indexOf(400); //array.indexOf(number_or_string); is a method to search for an element. It returns -1 if the element is not found or returns the number of the index in which the element is located.
+		console.log("Index of the element 400 is:" + search);
+
+		array1.sort(); 
+
+		console.log("The variable array1 is now sorted:" + array1);
+
+
+
+
+
+
+
 
 
 	</script>
