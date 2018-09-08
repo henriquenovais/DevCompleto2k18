@@ -156,6 +156,7 @@
 
 		//Arrays
 
+
 		var array1 = new Array(); //Create an array of undefined length
 		var array2 = [1 ,2 ,3]; //Array of defined length
 
@@ -191,8 +192,48 @@
 
 		console.log("The variable array1 is now sorted:" + array1);
 
+		//It is fundamental to note that a string is basically a vector of characters. Each character has an index.
+		var string = "This is a string";
 
 
+		//string.substr is a method to separate the string in smaller strings.
+		console.log(string.substr(0,4));
+		//string.charAt is able to show which character ocupies a certain index in the string
+		console.log(string.charAt(1));
+
+		var string_array = new Array();
+
+
+		//Split is an important method for strings because it allows the programmer to "break" the string in an array of multiple strings according to one character that will be considerer as the referential for the string separation
+		//In this case, our string_array has "This is a string" and through string.split(" "); the character " " will be the splitting reference.
+		//The output in this case will be an array of four indexes and each will be composed by: "This", "is", "a" and "string".
+		string_array = string.split(" ");
+		console.log("The string has been split into: " + string_array);
+
+		string_array = string;
+
+		//Through the same method, string.split("character"); it is even possible to specify which one of the splitted parts will be useful for the programmer.
+
+		string_array = string.split(" ")[0];
+		console.log("The first splitted string is: " + string_array);
+
+		string = string.toLowerCase();
+
+		console.log(string);
+
+		string = string.toUpperCase();
+
+		console.log(string);
+
+		var a_date = new Date();
+
+		console.log(a_date.getFullYear());
+		//January is month index 0 and this will apply to all other months. For example, index 3 is April.
+		console.log(a_date.getMonth());
+		var birth_date = new Date(1995,3,20); // birth_date now has the value of a specific date.
+		console.log(birth_date.getDay());
+
+		
 
 
 
