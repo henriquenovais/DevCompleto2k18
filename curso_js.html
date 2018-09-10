@@ -233,11 +233,47 @@
 		var birth_date = new Date(1995,3,20); // birth_date now has the value of a specific date.
 		console.log(birth_date.getDay());
 
-		
+		//The same class used for dates is used for time. 
 
+		var right_now = new Date() ;
 
+		console.log("Time keeps passing boy: " + right_now.getHours() + ":" + right_now.getMinutes() + ":" + right_now.getSeconds());
 
+		var fixed_time = new Date(1995,4,20,5,25,30); //The declaration is as follows: var test = new Date(year,month,day,hour,minute,seconds);
 
+		console.log("This is a fixed time: " + fixed_time.getHours() + ":" + fixed_time.getMinutes() + ":" + fixed_time.getSeconds());
+
+		//Declaring an object:
+
+		var product = new Object();
+		product.name = "Toy Car" ;
+		product.price = 29.99 ;
+		product.stock = 10;
+
+		var product1 = {
+			name: "Toy Gun",
+			price: 39.99,
+			stock: 5,
+			returnPrice: function() {
+				return this.price;
+			}
+		}
+
+		console.log("This is a product declared as an object:" + product.name + " , " + product.price + " , " + product.stock);
+		console.log("This is a product declared as an object:" + product1.name + " , " + product1.price + " , " + product1.stock);
+
+		//Creating a method:
+
+		var employee = {
+			name: "Charles",
+			lastname: "Boy",
+			pay: 50,
+			returnPay: function() {
+				return this.pay;
+			}
+		}
+
+		console.log("This is a getter for the employee.pay attribute: " + employee.returnPay());
 
 
 	</script>
