@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Course</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+	<h1>jQuery - Javascript API</h1>
+	<h3>Art through Javascript</h3>
+
+	<ul class="list">
+		<li id="item">This is </li>
+		<li id="item">A list</li>
+		<li id="item">Modified through jQuery</li>		
+	</ul>
+
+
+
+	<script type="text/javascript">
+		//jQuery is basically an API that allows programmers to simplify their code. JQuery is open source and every programmer can contribute to it.
+		jQuery(document).ready(function(e){
+			console.log("This function will trigger only when the document is fully loaded");
+		});
+
+		//jQuery(document).ready() can be substituted by $
+
+		/* $(function(e){
+			alert("I SHALL REVEAL TRUTH:  $ = jQuery(document).ready()");
+		});
+		*/
+
+		//Through jQuery any programmer is able to apply css through javascript
+
+		$(function(){
+			$("h1").css("font-family","'Times New Roman', sans-serif").css("color","red").css("text-shadow", "2px 2px 10px #000");
+			$("body").css("background","radial-gradient(navy 70% ,aqua )").css("height","60em");
+			$("h3").css("font-family","'Times New Roman', sans-serif").css("color","white").css("text-shadow", "2px 2px 10px #000").css("text-allign", "center").css("position","absolute").css("top","20em").css("left","22em");
+			$(".list , #item").css("color","yellow").css("font-size","2em").css("display","inline-block");
+		});
+	</script>
+</body>
+</html>
