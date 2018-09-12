@@ -8,12 +8,21 @@
 <body>
 	<h1>jQuery - Javascript API</h1>
 	<h3>Art through Javascript</h3>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
 
 	<ul class="list">
 		<li id="item">This is </li>
 		<li id="item">A list</li>
 		<li id="item">Modified through jQuery</li>		
 	</ul>
+	<br><br>
+	<h1 id="test1"></h1>
 
 
 
@@ -30,14 +39,51 @@
 		});
 		*/
 
+
+
+		// Through jQuery the programmer is able to add figures after and before elements
+		$(function(e){
+			$("<li><img src='imagens/foto1.jpg'></li>").insertBefore("li:last-child");
+			$("<li><img src='imagens/foto2.jpg'></li>").insertAfter("li:first-child");
+			$("<li class='test4'><img src='imagens/foto3.jpg'></li>").insertAfter("li:nth(4)");
+					});
+
+		$(function(e){
+			//jQuery enables the user to add information to an existing html tag as well
+			$("h1#test1").html("This text is an addition of HTML through jQuery's Javascript.");
+			//Add elements to a list before and after it respectively
+			$("ul.list").prepend("<li>PREPEND</li>");
+			$("ul.list").append("<li>APPEND</li>");
+			//To remove the first and last elements of a HTML tag
+			$("ul.list li:first").remove();
+			$("ul.list li:last").remove();
+			//Replacing a HTML element
+			$("ul.list li:nth(0)").replaceWith("<li>First Picture</li>");
+			//Adding an attribute in a HTML element
+			$("ul.list li:nth(0)").attr("id", "item");
+			$("ul.list li:nth(1)").attr("title", "WOW SUCH A GREAT PICTURE");
+			//Removing an attribute in a HTML element
+			$("ul.list li:nth(1)").removeAttr("title");
+			//jQuery is able to create elements so that they "embrace" each other
+			$("ul.list").wrapAll("<div class='test2'></div>");
+			$("div").css("border","4px solid #CCC");
+			//To measure the window size of the application:
+			console.log("A altura da janela é de:" + $(window).height());
+			console.log("A largura da janela é de:" + $(window).width());
+			console.log("A altura do documento é de:" + $(document).height());
+			console.log("A largura do documento é de:" + $(document).width());
+		});
+
+
 		//Through jQuery any programmer is able to apply css through javascript
 
 		$(function(){
 			$("h1").css("font-family","'Times New Roman', sans-serif").css("color","red").css("text-shadow", "2px 2px 10px #000");
 			$("body").css("background","radial-gradient(navy 70% ,aqua )").css("height","60em");
 			$("h3").css("font-family","'Times New Roman', sans-serif").css("color","white").css("text-shadow", "2px 2px 10px #000").css("text-allign", "center").css("position","absolute").css("top","20em").css("left","22em");
-			$(".list , #item").css("color","yellow").css("font-size","2em").css("display","inline-block");
+			$(".list , #item").css("color","yellow").css("font-size","2em").css("display","block").css("text-decoration","none").css("list-style", "none");
 		});
+
 	</script>
 </body>
 </html>
