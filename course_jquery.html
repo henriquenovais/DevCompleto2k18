@@ -23,6 +23,14 @@
 	</ul>
 	<br><br>
 	<h1 id="test1"></h1>
+	<br>
+	<div class="div1">
+
+		<div class="div2">
+			
+		</div>
+
+	</div>
 
 
 
@@ -72,6 +80,23 @@
 			console.log("A largura da janela é de:" + $(window).width());
 			console.log("A altura do documento é de:" + $(document).height());
 			console.log("A largura do documento é de:" + $(document).width());
+		});
+
+		$(function(e){
+			$(".div1").css("background-color","#CCC").css("height","250px").css("width","250px").css("border","5px solid #000").css("position","relative");
+			$(".div2").css("background-color","yellow").css("height","70px").css("width","70px").css("position","relative");
+			//In this case, the big div's parent element is the body tag, so it is measuring it's distance from the body tag.
+			console.log("Posição top do elemento :" + $(".div1").position().top);
+			console.log("Posição left do elemento :" + $(".div1").position().left);
+			//Since the small div's position is relative, the distance being measured is the distance between the small div and the big div(parent element):
+			console.log("Posição top do elemento :" + $(".div2").position().top);
+			console.log("Posição left do elemento :" + $(".div2").position().left);
+			//The small div's distance from it's parent's parent element is given by:
+			console.log("Posição top do elemento :" + $(".div2").offset().top);
+			console.log("Posição left do elemento :" + $(".div2").offset().left);
+			//Through jQuery is it possible to change div1(div2's parent element) background color:
+			$(".div2").offsetParent().css("background-color","green");
+			// ^ IMPORTANT: Please regard that the call to change background is being made to div2's parent element(div1) ^
 		});
 
 
